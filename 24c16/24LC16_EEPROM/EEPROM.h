@@ -74,11 +74,11 @@ typedef struct{
 void eeprom_init (void);
 operation_state eeprom_byte_write(uint8_t ,uint8_t ,uint8_t );
 
-operation_state eeprom_mul_byte_write(uint8_t*,uint8_t ,uint8_t ,uint8_t );
+operation_state eeprom_page_write(uint8_t*,uint8_t ,uint8_t ,uint8_t );
 
 operation_state eeprom_byte_read(uint8_t ,uint8_t );
 
-operation_state eeprom_mul_byte_read(uint8_t*,uint8_t data_add,uint8_t ,uint8_t );
+operation_state eeprom_page_read(uint8_t*,uint8_t data_add,uint8_t ,uint8_t );
 
 
 
