@@ -17,7 +17,7 @@ In the case of 24c16 (16K EEPROM) A3,A2 and A1 left unconnected which means 24c1
 
 Despite 24c15 has 2048 bytes((16*1024)/8) which logically could be ranged from 0x000 to ox7FF,however the actual word location which is set during read or write transfer is an eight bit width and it is set relatively to each block .
 
-for example if you want to wtite/read from address 0x102 ,so A2,A1,A0 must be set by software to 0b(010)  indicating block number 2 and the word location must be set to 0x02 or could be set relatively to page0 (ie,.. page0+2).
+for example if you want to wtite/read from address 0x102 ,so A2,A1,A0 must be set by software to 0b(010)  indicating block number 2 and the word location must be set to 0x02 or could be set relatively to page0 (ie,.. page0+(0....15)).
 
 
 
