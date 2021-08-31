@@ -38,7 +38,7 @@ void SysTick_Handler(void)
 }
 
 void enable_counter(void)
-{
+{	timer_cnt=0;
 	SysTick->CTRL|=SysTick_CTRL_ENABLE_Msk;
 }
 void stop_counter(void){
