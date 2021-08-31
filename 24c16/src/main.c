@@ -14,7 +14,7 @@ int main(void)
 
     eeprom_init();
 
-    /*write to location to address 10 in page n.2 included in block_10 */
+    /*write to location to address 10 in page n.2 included in block_0 */
     ret_state= eeprom_byte_write('W',PAGE_2+10,device_address_b0);
     if (ret_state.check !=NO_ERROR)
     {
